@@ -9,17 +9,14 @@ var x = 1;
 do {
     //введите точность absAcc
     //забрать значение absAcc
-    for (var i=2, next = x; next > absAcc || next < -absAcc; i++){
-        resultExp = resultExp + next;
-        next = next * x/i;
-    }
+
 }
 while (absAcc <= 0);    
 
-//for (var i=2, next = x; next > absAcc || next < -absAcc; i++){
-//    resultExp = resultExp + next;
-//    next = next * x/i;
-//}
+for (var i=2, next = x; next > absAcc || next < -absAcc; i++){
+    resultExp = resultExp + next;
+    next = next * x/i;
+}
 //вывести результат экспоненты resultExp;
 //погрешность next; 
 //длинну членов ряда i;
