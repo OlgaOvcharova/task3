@@ -1,35 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Задачка 3</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <script src="task3.js" defer></script>
+    <title>Задачка 3</title>
+</head>
 
 <body>
-    <h1>Задача 3</h1>
+    <h1>Определим приближенное значение экспоненты.</h>
+        <h1>Задайте значение абсолютной точности, в формате 0.0_ : <input id="absAcc"></h1>
+            <button onclick="myCalc()">Submit</button>
 
-    <script>
-    var resultExp = 1;
-    //var absAcc = 0.01;
-    var x = 1;
-do {
-    alert("Играем.");
-    var absAcc = prompt("Задайте значение абсолютной точности.");        
-
-    //введите точность absAcc
-    //забрать значение absAcc
-} while (absAcc <= 0);    
-
-for (var i=2, next = x; next > absAcc || next < -absAcc; i++){
-    resultExp = resultExp + next;
-    next = next * x/i;
-}
-
-//("Результат экспоненты: " + resultExp "Погрешность: " + next, "Длинна членов ряда: " + i);
-
-//вывести результат экспоненты resultExp;
-//погрешность next; 
-//длинну членов ряда i;
-    </script>
+        <h1 id="res1">Результат появится после нажатия кнопки Submit</h1>
 </body>
 </html>
